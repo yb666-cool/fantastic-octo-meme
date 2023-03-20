@@ -44,7 +44,7 @@ client = WeChatClient(app_id, app_secret)
 wm = WeChatMessage(client)
 count = 0
 for user_id in user_ids:
-  res = wm.send_template(user_id, template_id, data)
+  res = wm.send_template(user_id, template_id)
   count+=1
 
 print("发送了" + str(count) + "条消息")
